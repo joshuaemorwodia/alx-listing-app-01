@@ -1,3 +1,9 @@
+// interfaces/index.ts
+export interface Address {
+  city: string;
+  country: string;
+}
+
 export interface Review {
   name: string;
   avatar: string;
@@ -5,16 +11,11 @@ export interface Review {
   comment: string;
 }
 
-export interface Address {
-  city: string;
-  country: string;
-}
-
 export interface PropertyProps {
   name: string;
   rating: number;
-  address: Address;
   image: string;
+  address: Address;
   description: string;
   category: string[];
   price: number;
